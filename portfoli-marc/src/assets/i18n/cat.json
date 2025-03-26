@@ -1,9 +1,9 @@
 {
 "HERO": {
   "BADGE": "🚀 Disponible per treballar",
-  "TITLE": "Hola, sóc",
-  "NAME": "Marc Fort",
-  "SUBTITLE": "Desenvolupador FullStack a Espanya",
+  "WELCOME": "Transformant idees en codi",
+  "ROLE": "Desenvolupador FullStack | Creant experiències digitals",
+  "SUBTITLE": "Especialitzat en aplicacions web i mòbil",
   "DOWNLOAD_CV": "Descarrega el CV"
 },
  "about": {

@@ -1,51 +1,42 @@
+/* Animación de desvanecimiento */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-
-.hero-container {
-  /* Aumentar tamaño del contenedor */
-  width: 1000px;
-  height: 1000px;
-
-  /* Mantener el estilo circular */
-  background-color: #1b1b1b;
-  border-radius: 50%;
-
-  /* Centrar horizontalmente en la página */
-  margin: 120px auto 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  /* Sombra y otros estilos que ya tenías */
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
-  position: relative;
-  position: relative;
+/* Sección hero con imagen de fondo */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('../../../assets/bg.jpg') no-repeat center center/cover;
+              
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #121212, #1b1b1b);
-  border-radius: 20px;
+  padding: 120px 0;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+  filter: brightness(0.6); /* Redueix la lluminositat de la imatge */
+}
+
+
+/* Contenedor de la sección hero */
+.hero-container {
+  max-width: 800px;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(99, 125, 189, 0.5);
   animation: fadeIn 1s ease-in-out;
 }
 
+/* Estilos para el badge */
 .hero-badge {
   background: rgba(99, 125, 189, 0.2);
   padding: 8px 15px;
@@ -53,41 +44,31 @@
   font-size: 0.9rem;
   color: #B1C3EF;
   font-weight: bold;
-  animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Título principal */
 .hero-title {
-  font-size: 4rem;
-  /* antes 3rem */
+  font-size: 3rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
-  color: #888;
+  color: #fff;
 }
 
+/* Nombre */
 .hero-name {
-  font-size: 4.5rem;
-  /* antes 3.5rem */
+  font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff, #ccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #B1C3EF;
 }
 
-.hero-emoji {
-  font-size: 7rem;
-  /* antes 6rem */
-  margin-bottom: 1.5rem;
-}
-
+/* Subtítulo */
 .hero-subtitle {
   font-size: 1.2rem;
-  /* sube un poco de 1rem a 1.2rem */
   margin-bottom: 1.5rem;
   color: #ccc;
 }
 
-
+/* Botón de descarga */
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -101,30 +82,51 @@
   font-weight: 500;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 20px #B1C3EF;
-  animation: fadeIn 2.8s ease-in-out;
 }
 
 .hero-button:hover {
-  background: rgb(3, 47, 77);
+  background: #032f4d;
   color: #fff;
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgb(91, 100, 139);
+  box-shadow: 0 0 30px #5b648b;
 }
 
+/* Estilos para las redes sociales */
 .hero-social {
   display: flex;
   gap: 20px;
-  font-size: 2rem;
   margin-top: 1rem;
-  animation: fadeIn 3s ease-in-out;
+  justify-content: center;
 }
 
 .hero-social a {
-  color: #00ffff;
+  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.hero-social a:hover {
+.hero-social img {
+  width: 40px; /* Ajusta el tamaño de las imágenes */
+  height: 40px; /* Ajusta el tamaño de las imágenes */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.hero-social a:hover img {
   transform: scale(1.2);
-  color: #00ff99;
+  filter: brightness(1.2); /* Añade un efecto de brillo al pasar el ratón */
+}
+
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
 }

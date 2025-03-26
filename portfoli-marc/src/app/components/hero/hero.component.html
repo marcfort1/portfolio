@@ -5,35 +5,30 @@
     </span>
 
     <h1 class="hero-title">
-      {{ 'HERO.TITLE' | translate }}
+      {{ 'HERO.WELCOME' | translate }}
     </h1>
     <h2 class="hero-name">
-      {{ 'HERO.NAME' | translate }}
+      {{ 'HERO.ROLE' | translate }}
     </h2>
-
-    <div class="hero-emoji">🧑‍💻</div>
 
     <p class="hero-subtitle">
       {{ 'HERO.SUBTITLE' | translate }}
     </p>
 
-    <a
-      [href]="cvPath"
-      class="hero-button"
-      [attr.download]="cvFileName"
-    >
+    <a [href]="cvPath" class="hero-button" [attr.download]="cvFileName">
       {{ 'HERO.DOWNLOAD_CV' | translate }}
       <i class="fas fa-download"></i>
     </a>
 
     <!-- Redes sociales -->
     <div class="hero-social">
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/" target="_blank">
+        <img src="../../../assets/linkedin.png" alt="LinkedIn" />
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
+      <a href="https://github.com/marcfort1" target="_blank">
+        <img src="../../../assets/github.png" alt="GitHub" />
       </a>
     </div>
+    
   </div>
 </section>

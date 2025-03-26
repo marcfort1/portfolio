@@ -1,10 +1,13 @@
 .about-section {
+  background-color: rgba(0, 0, 0, 0.9);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
   color: #ffffff;
   text-align: center;
   padding: 120px 0;
-  border-bottom: 3px solid rgba(99, 125, 189, 0.3); /* Azul referencia */
-  box-shadow: 0 0 50px rgba(99, 125, 189, 0.2); /* Ajuste con colores de referencia */
+  border-bottom: 3px solid rgba(99, 125, 189, 0.3);
+  /* Azul referencia */
+  box-shadow: 0 0 50px rgba(99, 125, 189, 0.2);
+  /* Ajuste con colores de referencia */
   animation: fadeIn 1s ease-in-out;
 
   .section-title {
@@ -15,10 +18,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #B1C3EF;
-    background: linear-gradient(90deg, #B1C3EF, #00d4ff); /* Mezcla del azul de referencia */
+    background: linear-gradient(90deg, #B1C3EF, #00d4ff);
+    /* Mezcla del azul de referencia */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px  #B1C3EF;;
+    text-shadow: 0 0 20px #B1C3EF;
+    ;
   }
 
   .content {
@@ -49,7 +54,8 @@
   }
 
   .profile-img {
-    width: 200px; /* Aumentado para mejor visibilidad */
+    width: 200px;
+    /* Aumentado para mejor visibilidad */
     height: 200px;
     border-radius: 50%;
     object-fit: cover;

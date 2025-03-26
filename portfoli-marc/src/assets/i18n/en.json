@@ -1,9 +1,9 @@
 {
   "HERO": {
     "BADGE": "🚀 Open for work",
-    "TITLE": "Hi, I am",
-    "NAME": "Marc Fort",
-    "SUBTITLE": "FullStack Developer based in Spain",
+    "WELCOME": "Transforming ideas into code",
+    "ROLE": "FullStack Developer | Creating digital experiences",
+    "SUBTITLE": "Specialized in web and mobile applications",
     "DOWNLOAD_CV": "Download CV"
   },
   "about": {
