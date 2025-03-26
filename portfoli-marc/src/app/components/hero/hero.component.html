@@ -1,0 +1,39 @@
+<section id="hero" class="hero">
+  <div class="hero-container">
+    <span class="hero-badge">
+      {{ 'HERO.BADGE' | translate }}
+    </span>
+
+    <h1 class="hero-title">
+      {{ 'HERO.TITLE' | translate }}
+    </h1>
+    <h2 class="hero-name">
+      {{ 'HERO.NAME' | translate }}
+    </h2>
+
+    <div class="hero-emoji">🧑‍💻</div>
+
+    <p class="hero-subtitle">
+      {{ 'HERO.SUBTITLE' | translate }}
+    </p>
+
+    <a
+      [href]="cvPath"
+      class="hero-button"
+      [attr.download]="cvFileName"
+    >
+      {{ 'HERO.DOWNLOAD_CV' | translate }}
+      <i class="fas fa-download"></i>
+    </a>
+
+    <!-- Redes sociales -->
+    <div class="hero-social">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>

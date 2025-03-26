@@ -1,0 +1,16 @@
+<section id="about" class="about-section" appScrollFade>
+  <div class="container">
+    <h2 class="section-title">{{ 'about.title' | translate }}</h2>
+    <div class="content">
+      <div class="image-container">
+        <img src="../../../assets/profile.jpg" alt="Marc Fort González" class="profile-img">
+      </div>
+      <div class="text-content">
+        <p class="lead" 
+           [innerHTML]="'about.introduction' | translate: { name: 'Marc Fort González', skills: 'HTML5, CSS3, JavaScript, Bootstrap, Vue.js, Angular' }">
+        </p>
+        <p [innerHTML]="'about.interests' | translate"></p>
+      </div>
+    </div>
+  </div>
+</section>

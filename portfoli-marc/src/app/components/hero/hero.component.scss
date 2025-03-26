@@ -1,0 +1,130 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-container {
+  /* Aumentar tamaño del contenedor */
+  width: 1000px;
+  height: 1000px;
+
+  /* Mantener el estilo circular */
+  background-color: #1b1b1b;
+  border-radius: 50%;
+
+  /* Centrar horizontalmente en la página */
+  margin: 120px auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Sombra y otros estilos que ya tenías */
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
+  position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #121212, #1b1b1b);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-badge {
+  background: rgba(99, 125, 189, 0.2);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #B1C3EF;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-title {
+  font-size: 4rem;
+  /* antes 3rem */
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #888;
+}
+
+.hero-name {
+  font-size: 4.5rem;
+  /* antes 3.5rem */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-emoji {
+  font-size: 7rem;
+  /* antes 6rem */
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  /* sube un poco de 1rem a 1.2rem */
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: rgba(99, 125, 189, 0.2);
+  color: #B1C3EF;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px #B1C3EF;
+  animation: fadeIn 2.8s ease-in-out;
+}
+
+.hero-button:hover {
+  background: rgb(3, 47, 77);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(91, 100, 139);
+}
+
+.hero-social {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  margin-top: 1rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero-social a {
+  color: #00ffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-social a:hover {
+  transform: scale(1.2);
+  color: #00ff99;
+}

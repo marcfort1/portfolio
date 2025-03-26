@@ -1,0 +1,39 @@
+<div class="navbar-container">
+  <!-- Versión desktop -->
+  <div class="desktop-navbar d-none d-md-flex">
+    <ul class="nav-links">
+      <li *ngFor="let link of navLinks">
+        <a [href]="link.path" class="nav-link">
+          {{ link.title }}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Selector de idioma fuera del círculo y a la derecha del navbar -->
+  <div class="language-selector">
+    <img *ngFor="let lang of languages" 
+         [src]="lang.flag" 
+         [alt]="lang.label" 
+         (click)="changeLanguage(lang.code)">
+  </div>
+
+  <!-- Menú móvil -->
+  <div class="mobile-nav-overlay" [ngClass]="{'open': nav}">
+    <ul>
+      <li *ngFor="let link of navLinks">
+        <a [href]="link.path" (click)="closeNav()">
+          {{ link.title }}
+        </a>
+      </li>
+    </ul>
+
+    <!-- Selector de idioma en el menú móvil -->
+    <div class="language-selector">
+      <img *ngFor="let lang of languages" 
+           [src]="lang.flag" 
+           [alt]="lang.label" 
+           (click)="changeLanguage(lang.code)">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<section id="education" class="education-section py-5">
+  <div class="container">
+    <h2 class="section-title">{{ 'education.title' | translate }}</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let edu of educationList">
+        <div class="timeline-content">
+          <h4>{{ 'education.degrees.' + edu.title + '.title' | translate }}</h4>
+          <span class="text-primary">{{ 'education.degrees.' + edu.period + '.period' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

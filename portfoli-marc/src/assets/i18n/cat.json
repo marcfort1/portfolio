@@ -1,0 +1,113 @@
+{
+"HERO": {
+  "BADGE": "🚀 Disponible per treballar",
+  "TITLE": "Hola, sóc",
+  "NAME": "Marc Fort",
+  "SUBTITLE": "Desenvolupador FullStack a Espanya",
+  "DOWNLOAD_CV": "Descarrega el CV"
+},
+ "about": {
+    "title": "Sobre Mi",
+    "introduction": "Sóc <strong>{{ name }}</strong>, un desenvolupador web apassionat per les solucions innovadores. Amb experiència en administració de sistemes, configuració de xarxes i manteniment de hardware, he treballat amb tecnologies com <strong>{{ skills }}</strong>.",
+    "interests": "M'agrada treballar en equip i afrontar reptes tecnològics. Coneix més sobre la meva trajectòria professional visitant el meu perfil de <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
+ },
+  "contact": {
+    "title": "Contacte",
+    "email": "Email: <a href='mailto:{{ email }}'>{{ email }}</a>",
+    "phone": "Telèfon: <a href='tel:{{ phone }}'>{{ phone }}</a>",
+    "location": "Ubicació: {{ location }}"
+  },
+  "education": {
+    "title": "Educació",
+    "degrees": {
+      "cfgs_desarrollament_multiplataforma": {
+        "title": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
+        "period": "Setembre 2024 - Maig 2025"
+      },
+      "cfgs_desarrollament_web": {
+        "title": "CFGS Desenvolupament d'Aplicacions Web",
+        "period": "Setembre 2022 - Maig 2024"
+      },
+      "cfgm_sistemes_microinformatiques": {
+        "title": "CFGM Sistemes Microinformàtics i Xarxes",
+        "period": "Setembre 2019 - Maig 2022"
+      },
+      "eso": {
+        "title": "ESO",
+        "period": "Setembre 2015 - Juny 2019"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiència Laboral",
+    "experiences": {
+      "dxc_technology": {
+        "company": "DXC Technology",
+        "role": "Becari Desenvolupador Web",
+        "duration": "1000 hores de pràctiques",
+        "tasks": [
+          "Resolució d'incidències",
+          "Desenvolupament d'aplicacions web",
+          "Disseny web",
+          "Disseny de bases de dades"
+        ]
+      },
+      "meibit": {
+        "company": "Meibit SL",
+        "role": "Becari Desenvolupador Web",
+        "duration": "900 hores de pràctiques",
+        "tasks": [
+          "Resolució d'incidències",
+          "Desenvolupament d'aplicacions web"
+        ]
+      },
+      "bon_preu": {
+        "company": "BON PREU, SAU",
+        "role": "Personal Reponedor",
+        "duration": "Juny - Agost 2022, 2023, 2024",
+        "tasks": [
+          "Manteniment de la secció de frescos",
+          "Reposició de productes"
+        ]
+      }
+    }
+  },
+  "navbar": {
+    "about": "Sobre mi",
+    "experience": "Experiència",
+    "education": "Educació",
+    "skills": "Habilitats",
+    "projects": "Projectes",
+    "contact": "Contacte"
+  },
+  "projects": {
+    "title": "Projectes",
+    "technologies": "Tecnologies",
+    "view_project": "Veure Projecte",
+    "gestor_llistes": {
+      "title": "Gestor de Llistes de la Compra",
+      "description": "Aplicació web per gestionar llistes de la compra amb Firebase."
+    },
+    "portfolio": {
+      "title": "Portfolio Personal",
+      "description": "El meu portfoli desenvolupat amb Angular i Bootstrap."
+    },
+    "gestio_usuaris": {
+      "title": "Sistema de Gestió d'Usuaris",
+      "description": "Aplicació per gestionar usuaris amb autenticació en Firebase."
+    }
+  },
+  "skills": {
+    "title": "Habilitats",
+    "html": "HTML5",
+    "css": "CSS3",
+    "javascript": "JavaScript",
+    "bootstrap": "Bootstrap",
+    "angular": "Angular",
+    "vue": "Vue.js",
+    "csharp": "C#",
+    "database_design": "Disseny de Bases de Dades",
+    "system_administration": "Administració de Sistemes",
+    "network_configuration": "Configuració de Xarxes"
+  }
+}

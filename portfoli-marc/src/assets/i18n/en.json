@@ -1,0 +1,100 @@
+{
+  "HERO": {
+    "BADGE": "🚀 Open for work",
+    "TITLE": "Hi, I am",
+    "NAME": "Marc Fort",
+    "SUBTITLE": "FullStack Developer based in Spain",
+    "DOWNLOAD_CV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "introduction": "I am <strong>{{ name }}</strong>, a passionate web developer specialized in innovative solutions. With experience in system administration, network configuration, and hardware maintenance, I have worked with technologies such as <strong>{{ skills }}</strong>.",
+    "interests": "I enjoy teamwork and tackling technological challenges. Learn more about my professional journey by visiting my <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a> profile."
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email: <a href='mailto:{{ email }}'>{{ email }}</a>",
+    "phone": "Phone: <a href='tel:{{ phone }}'>{{ phone }}</a>",
+    "location": "Location: {{ location }}"
+  },
+  "education": {
+    "title": "Education",
+    "degrees": {
+      "cfgs_desarrollament_multiplataforma": {
+        "title": "CFGS Development of Multiplatform Applications",
+        "period": "September 2024 - May 2025"
+      },
+      "cfgs_desarrollament_web": {
+        "title": "CFGS Development of Web Applications",
+        "period": "September 2022 - May 2024"
+      },
+      "cfgm_sistemes_microinformatiques": {
+        "title": "CFGM Microcomputer Systems and Networks",
+        "period": "September 2019 - May 2022"
+      },
+      "eso": {
+        "title": "ESO",
+        "period": "September 2015 - June 2019"
+      }
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "experiences": {
+      "dxc_technology": {
+        "company": "DXC Technology",
+        "role": "Web Developer Intern",
+        "duration": "1000 hours of internship",
+        "tasks": [
+          "Incident resolution",
+          "Web application development",
+          "Web design",
+          "Database design"
+        ]
+      },
+      "meibit": {
+        "company": "Meibit",
+        "role": "Web Developer Intern",
+        "duration": "900 hours of internship",
+        "tasks": [
+          "Incident resolution",
+          "Web application development"
+        ]
+      },
+      "bon_preu": {
+        "company": "BON PREU, SAU",
+        "role": "Stocker",
+        "duration": "June - August 2022, 2023, 2024",
+        "tasks": [
+          "Maintaining the fresh section",
+          "Product restocking"
+        ]
+      }
+    }
+  },
+  "navbar": {
+    "about": "About Me",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "view_project": "View Project",
+    "gestor_llistes": {
+      "title": "Shopping List Manager",
+      "description": "Web app to manage shopping lists with Firebase."
+    },
+    "portfolio": {
+      "title": "Personal Portfolio",
+      "description": "My portfolio developed with Angular and Bootstrap."
+    },
+    "gestio_usuaris": {
+      "title": "User Management System",
+      "description": "App to manage users with Firebase authentication."
+    }
+  }
+}
