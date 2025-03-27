@@ -27,3 +27,5 @@ export class SkillsComponent {
     { name: 'Node', key: 'node', image: '../../../assets/node.png' }
   ];
 }
+
+

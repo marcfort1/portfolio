@@ -17,6 +17,23 @@
     "phone": "Teléfono: <a href='tel:{{ phone }}'>{{ phone }}</a>",
     "location": "Ubicación: {{ location }}"
   },
+  "skills": {
+    "title": "Habilidades",
+    "skills": {
+      "angular": "Angular",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "sql_server": "SQL Server",
+      "mysql": "MySQL",
+      "docker": "Docker",
+      "github": "GitHub",
+      "visual_studio": "Visual Studio",
+      "visual_studio_code": "Visual Studio Code",
+      "node": "Node"
+    }
+  },
   "education": {
     "title": "Educación",
     "degrees": {
@@ -73,6 +90,7 @@
     }
   },
   "navbar": {
+    "hero": "Inicio",
     "about": "Sobre mí",
     "experience": "Experiencia",
     "education": "Educación",

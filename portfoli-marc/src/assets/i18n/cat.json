@@ -17,6 +17,23 @@
     "phone": "Telèfon: <a href='tel:{{ phone }}'>{{ phone }}</a>",
     "location": "Ubicació: {{ location }}"
   },
+  "skills": {
+    "title": "Competències",
+    "skills": {
+      "angular": "Angular",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "sql_server": "SQL Server",
+      "mysql": "MySQL",
+      "docker": "Docker",
+      "github": "GitHub",
+      "visual_studio": "Visual Studio",
+      "visual_studio_code": "Visual Studio Code",
+      "node": "Node"
+    }
+  },
   "education": {
     "title": "Educació",
     "degrees": {
@@ -73,6 +90,7 @@
     }
   },
   "navbar": {
+    "hero": "Inici",
     "about": "Sobre mi",
     "experience": "Experiència",
     "education": "Educació",
@@ -96,18 +114,5 @@
       "title": "Sistema de Gestió d'Usuaris",
       "description": "Aplicació per gestionar usuaris amb autenticació en Firebase."
     }
-  },
-  "skills": {
-    "title": "Habilitats",
-    "html": "HTML5",
-    "css": "CSS3",
-    "javascript": "JavaScript",
-    "bootstrap": "Bootstrap",
-    "angular": "Angular",
-    "vue": "Vue.js",
-    "csharp": "C#",
-    "database_design": "Disseny de Bases de Dades",
-    "system_administration": "Administració de Sistemes",
-    "network_configuration": "Configuració de Xarxes"
   }
 }

@@ -13,6 +13,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SkillsComponent } from './components/skills/skills.component';
+
 
 // Funció que crea el loader per carregar els arxius JSON d'idiomes
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     NavbarComponent,
     HeroComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

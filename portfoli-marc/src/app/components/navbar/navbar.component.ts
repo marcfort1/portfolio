@@ -15,11 +15,12 @@ export class NavbarComponent {
   nav: boolean = false;
 
   navLinks: NavLink[] = [
-    { title: "Home", path: "#hero" },
-    { title: "About", path: "#about" },
-    { title: "Portfolio", path: "#experience" },
-    { title: "Services", path: "#education" },
-    { title: "Contact", path: "#contact" },
+    { title: "navbar.hero", path: "#hero" },
+    { title: "navbar.about", path: "#about" },
+    { title: "navbar.skills", path: "#skills" },
+    { title: "navbar.experience", path: "#experience" },
+    { title: "navbar.education", path: "#education" },
+    { title: "navbar.contact", path: "#contact" },
   ];
 
   languages = [

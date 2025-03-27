@@ -4,7 +4,7 @@
     <ul class="nav-links">
       <li *ngFor="let link of navLinks">
         <a [href]="link.path" class="nav-link">
-          {{ link.title }}
+          {{ link.title | translate }}
         </a>
       </li>
     </ul>
@@ -23,7 +23,7 @@
     <ul>
       <li *ngFor="let link of navLinks">
         <a [href]="link.path" (click)="closeNav()">
-          {{ link.title }}
+          {{ link.title | translate }}
         </a>
       </li>
     </ul>
