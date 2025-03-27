@@ -1,0 +1,11 @@
+ <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2 class="section-title">{{ 'skills.title' | translate }}</h2>
+      <div class="skills-grid">
+        <div class="skill-item" *ngFor="let skill of skills">
+          <img [src]="skill.image" [alt]="skill.name" class="skill-img">
+          <p class="skill-name">{{ 'skills.skills.' + skill.key | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
