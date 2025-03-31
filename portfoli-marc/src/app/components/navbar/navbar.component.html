@@ -10,15 +10,11 @@
     </ul>
   </div>
 
-  <!-- Selector de idioma fuera del círculo y a la derecha del navbar -->
-  <div class="language-selector">
-    <img *ngFor="let lang of languages" 
-         [src]="lang.flag" 
-         [alt]="lang.label" 
-         (click)="changeLanguage(lang.code)">
-  </div>
+  <!-- Icono para el menú móvil -->
+  <div class="mobile-menu-icon" (click)="toggleNav()" [class.active]="nav">
+    <span class="menu-icon">☰</span>
+  </div>  
 
-  <!-- Menú móvil -->
   <div class="mobile-nav-overlay" [ngClass]="{'open': nav}">
     <ul>
       <li *ngFor="let link of navLinks">
@@ -27,13 +23,19 @@
         </a>
       </li>
     </ul>
-
-    <!-- Selector de idioma en el menú móvil -->
-    <div class="language-selector">
+    <div class="language-selector mobile">
       <img *ngFor="let lang of languages" 
            [src]="lang.flag" 
            [alt]="lang.label" 
            (click)="changeLanguage(lang.code)">
     </div>
+  </div>
+
+  <!-- Selector de idioma fuera del círculo y a la derecha del navbar (versión desktop) -->
+  <div class="language-selector desktop">
+    <img *ngFor="let lang of languages" 
+         [src]="lang.flag" 
+         [alt]="lang.label" 
+         (click)="changeLanguage(lang.code)">
   </div>
 </div>

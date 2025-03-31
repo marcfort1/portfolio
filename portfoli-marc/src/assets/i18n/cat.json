@@ -10,13 +10,14 @@
     "title": "Sobre Mi",
     "introduction": "Sóc <strong>{{ name }}</strong>, un desenvolupador web apassionat per les solucions innovadores. Amb experiència en administració de sistemes, configuració de xarxes i manteniment de hardware, he treballat amb tecnologies com <strong>{{ skills }}</strong>.",
     "interests": "M'agrada treballar en equip i afrontar reptes tecnològics. Coneix més sobre la meva trajectòria professional visitant el meu perfil de <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
- },
+},
   "contact": {
-    "title": "Contacte",
-    "email": "Email: <a href='mailto:{{ email }}'>{{ email }}</a>",
-    "phone": "Telèfon: <a href='tel:{{ phone }}'>{{ phone }}</a>",
-    "location": "Ubicació: {{ location }}"
-  },
+    "getInTouch": "Posa't",
+    "spanTouch": "en contacte",
+    "phone": "Telèfon",
+    "email": "Correu electrònic",
+    "locationTitle": "Ubicació"
+},
   "skills": {
     "title": "Competències",
     "skills": {
@@ -24,7 +25,7 @@
       "html": "HTML",
       "css": "CSS",
       "javascript": "JavaScript",
-      "typescript": "TypeScript",
+      "c#": "C#",
       "sql_server": "SQL Server",
       "mysql": "MySQL",
       "docker": "Docker",

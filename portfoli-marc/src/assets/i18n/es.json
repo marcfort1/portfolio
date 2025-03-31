@@ -12,10 +12,11 @@
     "interests": "Me impulsa el trabajar en equipo y resolver desafíos tecnológicos. Descubre más sobre mi trayectoria profesional en mi perfil de <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
   },
   "contact": {
-    "title": "Contacto",
-    "email": "Email: <a href='mailto:{{ email }}'>{{ email }}</a>",
-    "phone": "Teléfono: <a href='tel:{{ phone }}'>{{ phone }}</a>",
-    "location": "Ubicación: {{ location }}"
+   "getInTouch": "Ponte en",
+    "spanTouch": "contacto",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "locationTitle": "Ubicación"
   },
   "skills": {
     "title": "Habilidades",
@@ -24,7 +25,7 @@
       "html": "HTML",
       "css": "CSS",
       "javascript": "JavaScript",
-      "typescript": "TypeScript",
+      "c#": "C#",
       "sql_server": "SQL Server",
       "mysql": "MySQL",
       "docker": "Docker",

@@ -2,15 +2,15 @@
   <div class="contact-container">
     <div class="contact-grid">
       <div class="contact-info" [@fadeInLeft]>
-        <h2>Get in <span>touch</span></h2>
+        <h2>{{ 'contact.getInTouch' | translate }} <span>{{ 'contact.spanTouch' | translate }}</span></h2>
         <div class="info-box">
-          <p>Phone</p>
+          <p>{{ 'contact.phone' | translate }}</p>
           <a [href]="'tel:' + contactInfo.phone" class="contact-link">
             {{ contactInfo.phone }} <span>↗</span>
           </a>
         </div>
         <div class="info-box">
-          <p>Email</p>
+          <p>{{ 'contact.email' | translate }}</p>
           <a [href]="'mailto:' + contactInfo.email" class="contact-link">
             {{ contactInfo.email }} <span>↗</span>
           </a>
@@ -18,7 +18,7 @@
       </div>
       <div class="map-container" [@fadeInRight]>
         <iframe
-          title="Location"
+          title="{{ 'contact.locationTitle' | translate }}"
           width="100%"
           height="100%"
           frameborder="0"

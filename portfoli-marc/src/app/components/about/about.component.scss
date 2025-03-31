@@ -24,16 +24,21 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 3rem;
+    margin-left: 28%;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /* Color i efecte de gradient similar al hero */
     background: linear-gradient(90deg, #B1C3EF, #00d4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 20px #B1C3EF;
+  
+    @media (max-width: 767px) { 
+      text-align: center;
+      margin-left: 0; 
+    }
   }
-
+  
   .content {
     display: flex;
     flex-direction: column;
@@ -49,14 +54,16 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
     animation: fadeIn 1.5s ease-in-out;
+  
     @media (min-width: 768px) {
       margin-right: 40px;
       margin-bottom: 0;
+      align-self: flex-start; /* Mueve la imagen más arriba */
     }
   }
-
+  
   .profile-img {
     width: 200px;
     height: 200px;
@@ -65,12 +72,14 @@
     border: 3px solid rgba(99, 125, 189, 0.8);
     box-shadow: 0 0 20px rgba(99, 125, 189, 0.6), 0 0 40px rgba(99, 125, 189, 0.3);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+    margin-top: 23px; /* Ajusta este valor para subir más la imagen */
+  
     &:hover {
       box-shadow: 0 0 30px rgba(99, 125, 189, 0.8), 0 0 60px rgba(99, 125, 189, 0.5);
       transform: scale(1.05);
     }
   }
-
+  
   .text-content {
     flex: 2;
     animation: fadeIn 2s ease-in-out;
@@ -79,6 +88,7 @@
       line-height: 1.9;
       color: rgba(255, 255, 255, 0.9);
       margin-bottom: 1.2rem;
+      margin-right: 35px;
       font-family: 'Poppins', sans-serif;
       text-shadow: 0 0 10px rgba(99, 125, 189, 0.3);
       strong {

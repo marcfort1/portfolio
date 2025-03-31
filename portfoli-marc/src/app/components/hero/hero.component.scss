@@ -68,9 +68,9 @@
   color: #ccc;
 }
 
-/* Botón de descarga */
 .hero-button {
   display: inline-flex;
+  text-align: center;
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
@@ -82,6 +82,20 @@
   font-weight: 500;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 20px #B1C3EF;
+}
+
+.hero-button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px; /* Ajusta este valor según necesites */
+}
+
+.hero-button i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
 }
 
 .hero-button:hover {

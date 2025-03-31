@@ -12,10 +12,11 @@
     "interests": "I enjoy teamwork and tackling technological challenges. Learn more about my professional journey by visiting my <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a> profile."
   },
   "contact": {
-    "title": "Contact",
-    "email": "Email: <a href='mailto:{{ email }}'>{{ email }}</a>",
-    "phone": "Phone: <a href='tel:{{ phone }}'>{{ phone }}</a>",
-    "location": "Location: {{ location }}"
+    "getInTouch": "Get in",
+    "spanTouch": "touch",
+    "phone": "Phone",
+    "email": "Email",
+    "locationTitle": "Location"
   },
   "skills": {
     "title": "Skills",
@@ -24,7 +25,7 @@
       "html": "HTML",
       "css": "CSS",
       "javascript": "JavaScript",
-      "typescript": "TypeScript",
+      "c#": "C#",
       "sql_server": "SQL Server",
       "mysql": "MySQL",
       "docker": "Docker",
