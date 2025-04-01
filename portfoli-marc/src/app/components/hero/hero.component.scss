@@ -12,9 +12,8 @@
 
 /* Sección hero con imagen de fondo */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
               url('../../../assets/bg.jpg') no-repeat center center/cover;
-              
   width: 100%;
   padding: 120px 0;
   background-color: rgba(0, 0, 0, 0.9);
@@ -22,9 +21,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  filter: brightness(0.6); /* Redueix la lluminositat de la imatge */
+  filter: brightness(0.6); /* Reduce la luminosidad de la imagen */
 }
-
 
 /* Contenedor de la sección hero */
 .hero-container {
@@ -68,6 +66,7 @@
   color: #ccc;
 }
 
+/* Botón de descarga */
 .hero-button {
   display: inline-flex;
   text-align: center;
@@ -88,7 +87,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px; /* Ajusta este valor según necesites */
+  margin-left: 8px;
 }
 
 .hero-button i {
@@ -119,18 +118,17 @@
 }
 
 .hero-social img {
-  width: 40px; /* Ajusta el tamaño de las imágenes */
-  height: 40px; /* Ajusta el tamaño de las imágenes */
-  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Efecto al pasar el ratón */
+/* Efecto al pasar el ratón en redes sociales */
 .hero-social a:hover img {
   transform: scale(1.2);
-  filter: brightness(1.2); /* Añade un efecto de brillo al pasar el ratón */
+  filter: brightness(1.2);
 }
-
 
 /* Media queries para diseño responsivo */
 @media (max-width: 768px) {
@@ -142,5 +140,33 @@
   }
   .hero-subtitle {
     font-size: 1rem;
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 0;
+  }
+  .hero-container {
+    padding: 30px 10px;
+    max-width: 90%;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  .hero-social img {
+    width: 30px;
+    height: 30px;
   }
 }

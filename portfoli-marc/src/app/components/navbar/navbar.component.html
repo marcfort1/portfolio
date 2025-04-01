@@ -15,6 +15,7 @@
     <span class="menu-icon">☰</span>
   </div>  
 
+  <!-- Menú móvil (incluye el selector de idioma) -->
   <div class="mobile-nav-overlay" [ngClass]="{'open': nav}">
     <ul>
       <li *ngFor="let link of navLinks">
@@ -31,7 +32,7 @@
     </div>
   </div>
 
-  <!-- Selector de idioma fuera del círculo y a la derecha del navbar (versión desktop) -->
+  <!-- Selector de idioma para desktop -->
   <div class="language-selector desktop">
     <img *ngFor="let lang of languages" 
          [src]="lang.flag" 

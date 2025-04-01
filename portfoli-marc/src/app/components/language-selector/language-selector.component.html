@@ -2,7 +2,6 @@
     <img *ngFor="let lang of languages" 
          [src]="lang.flag" 
          [alt]="lang.label" 
-         (click)="changeLanguage(lang.code)" 
-         style="cursor:pointer; margin: 0 5px; width: 30px;">
+         (click)="changeLanguage(lang.code)">
   </div>
   

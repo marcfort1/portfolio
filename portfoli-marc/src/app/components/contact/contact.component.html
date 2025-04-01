@@ -2,7 +2,10 @@
   <div class="contact-container">
     <div class="contact-grid">
       <div class="contact-info" [@fadeInLeft]>
-        <h2>{{ 'contact.getInTouch' | translate }} <span>{{ 'contact.spanTouch' | translate }}</span></h2>
+        <h2>
+          {{ 'contact.getInTouch' | translate }} 
+          <span>{{ 'contact.spanTouch' | translate }}</span>
+        </h2>
         <div class="info-box">
           <p>{{ 'contact.phone' | translate }}</p>
           <a [href]="'tel:' + contactInfo.phone" class="contact-link">

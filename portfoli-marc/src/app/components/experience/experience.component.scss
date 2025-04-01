@@ -36,6 +36,7 @@
     max-width: 800px;
     margin: auto;
 
+    /* Línea central visible en escritorio */
     &::before {
       content: "";
       position: absolute;
@@ -54,6 +55,7 @@
       display: flex;
       justify-content: flex-start;
 
+      /* Alterna la posición en escritorio */
       &:nth-child(even) {
         justify-content: flex-end;
       }
@@ -124,7 +126,7 @@
   }
 }
 
-/* Animació de desvaneciment, igual que als altres components */
+/* Animación de desvanecimiento, igual que en los otros componentes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -133,5 +135,89 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 80px 0;
+  }
+  .experience-container {
+    padding: 30px 15px;
+    max-width: 95%;
+  }
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .timeline {
+    /* Oculta la línea temporal en móvil */
+    &::before {
+      display: none;
+    }
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 30px;
+
+      /* Se elimina la alternancia para centrar el contenido */
+      .timeline-content {
+        width: 90%;
+        border: none;
+        border-top: 5px solid #B1C3EF;
+        text-align: center;
+        padding: 15px;
+      }
+      /* Opcional: oculta el punto temporal en móvil */
+      .timeline-dot {
+        display: none;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  .text-muted {
+    font-size: 0.9rem;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .experience-container {
+    padding: 20px 10px;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  .text-muted {
+    font-size: 0.85rem;
+  }
+  ul {
+    li {
+      font-size: 0.85rem;
+    }
   }
 }
