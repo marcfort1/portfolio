@@ -1,3 +1,27 @@
+/* Reset útil */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* evita franjas por overflow horizontal */
+}
+
+/* Coloca el fondo en html para que cubra TODO */
+html {
+  background: linear-gradient(to bottom, #121212 0%, #2c003e 100%);
+  color-scheme: light dark;
+}
+
+/* body transparente para que se vea el fondo del html */
+body {
+  background: transparent;
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+
 :root {
   color-scheme: light dark;
 }

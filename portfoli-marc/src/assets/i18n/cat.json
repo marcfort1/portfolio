@@ -1,16 +1,16 @@
 {
 "HERO": {
-  "BADGE": "🚀 Disponible per treballar",
-  "WELCOME": "Transformant idees en codi",
-  "ROLE": "Desenvolupador FullStack | Creant experiències digitals",
-  "SUBTITLE": "Especialitzat en aplicacions web i mòbil",
-  "DOWNLOAD_CV": "Descarrega el CV"
-},
- "about": {
+    "BADGE": "🚀 Desenvolupador Full-Stack en creixement",
+    "WELCOME": "Impulsant solucions digitals amb tecnologia",
+    "ROLE": "Full-Stack Developer | Especialista en C# i Angular",
+    "SUBTITLE": "Construint aplicacions web modernes, ràpides i escalables",
+    "DOWNLOAD_CV": "Descarrega el CV"
+  },
+  "about": {
     "title": "Sobre Mi",
-    "introduction": "Sóc <strong>{{ name }}</strong>, un desenvolupador web apassionat per les solucions innovadores. Amb experiència en administració de sistemes, configuració de xarxes i manteniment de hardware, he treballat amb tecnologies com <strong>{{ skills }}</strong>.",
-    "interests": "M'agrada treballar en equip i afrontar reptes tecnològics. Coneix més sobre la meva trajectòria professional visitant el meu perfil de <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
-},
+    "introduction": "Sóc <strong>{{ name }}</strong>, desenvolupador Full-Stack amb experiència en la construcció d'aplicacions web completes utilitzant Angular, .NET (C#) i SQL Server. He participat i liderat projectes orientats a entorns reals, com plataformes de logística, control d'accessos i gestió d'usuaris, treballant tant en arquitectura com en desenvolupament de funcionalitats.",
+    "interests": "M'apassiona crear solucions útils i escalables, optimitzar processos i resoldre reptes tècnics. Gaudeixo treballant en equip, col·laborant amb client i integrant metodologies àgils. Pots conèixer més sobre la meva trajectòria visitant el meu <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
+  },
   "contact": {
     "getInTouch": "Posa't",
     "spanTouch": "en contacte",

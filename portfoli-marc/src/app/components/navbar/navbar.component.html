@@ -8,10 +8,21 @@
         </a>
       </li>
     </ul>
+
+    <!-- Selector de idioma para desktop (ahora dentro de la barra de escritorio) -->
+    <div class="language-selector desktop">
+      <img *ngFor="let lang of languages" 
+           [src]="lang.flag" 
+           [alt]="lang.label" 
+           (click)="changeLanguage(lang.code)">
+    </div>
   </div>
 
   <!-- Icono para el menú móvil -->
-  <div class="mobile-menu-icon" (click)="toggleNav()" [class.active]="nav">
+  <div class="mobile-menu-icon"
+       (click)="toggleNav()"
+       [class.active]="nav"
+       [attr.aria-expanded]="nav">
     <span class="menu-icon">☰</span>
   </div>  
 
@@ -24,19 +35,13 @@
         </a>
       </li>
     </ul>
+
+    <!-- Banderas dentro del overlay (solo aquí en móvil) -->
     <div class="language-selector mobile">
       <img *ngFor="let lang of languages" 
            [src]="lang.flag" 
            [alt]="lang.label" 
            (click)="changeLanguage(lang.code)">
     </div>
-  </div>
-
-  <!-- Selector de idioma para desktop -->
-  <div class="language-selector desktop">
-    <img *ngFor="let lang of languages" 
-         [src]="lang.flag" 
-         [alt]="lang.label" 
-         (click)="changeLanguage(lang.code)">
   </div>
 </div>

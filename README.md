@@ -1,27 +1,26 @@
 # Mi Portfolio en Angular
 
-Bienvenido a mi portfolio personal. Puedes ver una demo en directo de mi portfolio en el siguiente enlace:  
-[Demo en vivo](https://portfoli-marcf.netlify.app/)
+Este es mi primer proyecto individual en el que he creado un portfolio personal utilizando **Angular**. El proyecto incluye varias secciones como una presentación personal, experiencia laboral, estudios y contacto, con el objetivo de mostrar mis habilidades y logros.
 
 ## Descripción
 
-Este es mi primer proyecto individual, en el que he creado un portfolio personal utilizando **Angular**. El proyecto incluye secciones como presentación, experiencia laboral, estudios y contacto, con el objetivo de mostrar mis habilidades y logros.
+Este portfolio está diseñado para proporcionar una vista general de mi trayectoria profesional y académica. He implementado la funcionalidad completa de la página usando **Angular**, destacando mis conocimientos en desarrollo web, manejo de rutas, formularios, y otros conceptos importantes de Angular.
 
 ## Estructura del Proyecto
 
 El proyecto contiene las siguientes secciones principales:
 
-1. **Presentación**: Una breve introducción sobre mí, mis intereses y motivaciones.  
-2. **Experiencia Laboral**: Información sobre mis trabajos previos, roles desempeñados y habilidades adquiridas.  
-3. **Estudios**: Detalles sobre mi formación académica, títulos obtenidos y cursos relevantes.  
-4. **Contacto**: Un formulario de contacto donde los usuarios pueden enviar mensajes utilizando formularios reactivos de Angular.
+1. **Presentación**: Una breve introducción sobre mí, mis intereses y motivaciones.
+2. **Experiencia Laboral**: Información sobre mis trabajos previos, roles desempeñados y habilidades adquiridas.
+3. **Estudios**: Detalles sobre mi formación académica, títulos obtenidos y cursos relevantes.
+4. **Contacto**: Un formulario de contacto donde los usuarios pueden enviar mensajes. Esta sección utiliza formularios reactivos en Angular.
 
 ## Tecnologías Utilizadas
 
 - **Angular**: Framework principal para el desarrollo de la aplicación.
 - **HTML5 & CSS3**: Para la estructuración y el diseño visual de la página.
 - **TypeScript**: Para el desarrollo de la lógica de la aplicación.
-- **Bootstrap**: Para los estilos y el diseño responsivo.
+- **Bootstrap**: Para los estilos y diseño responsivo.
 
 ## Instalación
 
@@ -49,15 +48,13 @@ El proyecto contiene las siguientes secciones principales:
 
 ## Funcionalidades
 
-- **Navegación fluida**: Navega entre las diferentes secciones del portfolio mediante un menú de navegación.
-- **Formularios Reactivos**: Se utiliza para el envío de mensajes en la sección de contacto.
-- **Responsive Design**: Diseño adaptado a diferentes dispositivos.
-
+- **Navegación fluida**: Se puede navegar entre las diferentes secciones del portfolio usando el menú de navegación.
+  
 ## Mejoras Futuras
 
-- Implementar la funcionalidad de backend para manejar el envío de correos electrónicos desde el formulario de contacto.  
-- Optimizar la accesibilidad y la experiencia del usuario (UX).  
-- Agregar más secciones o detalles sobre proyectos y logros.
+- Implementar la funcionalidad de backend para manejar el envío de correos electrónicos desde el formulario de contacto.
+- Optimización de la accesibilidad y mejoras en la experiencia del usuario (UX).
+- Agregar más secciones o detalles sobre mis proyectos y logros.
 
 ## Contribuciones
 
@@ -65,8 +62,8 @@ Este es un proyecto personal, pero si tienes alguna sugerencia de mejora o desea
 
 ## Agradecimientos
 
-Gracias por visitar mi portfolio. Espero que te guste lo que has visto hasta ahora. ¡Te invito a revisar la demo en vivo y a explorar el código!
+Gracias por visitar mi portfolio. Espero que te guste lo que has visto hasta ahora.
 
 ---
 
-¡No dudes en contribuir y compartir tus comentarios!
+¡No dudes en revisar el código y contribuir si lo deseas!

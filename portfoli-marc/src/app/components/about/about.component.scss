@@ -20,24 +20,30 @@
     animation: fadeIn 1s ease-in-out;
   }
 
-  .section-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    margin-left: 28%;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: linear-gradient(90deg, #B1C3EF, #00d4ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px #B1C3EF;
-  
-    @media (max-width: 767px) { 
-      text-align: center;
-      margin-left: 0; 
-    }
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-left: 28%;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  /* Color sólido deseado */
+  color: #B1C3EF;
+
+  /* Quitamos gradiente y efectos que lo aclaraban */
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  text-shadow: 0 0 12px rgba(177, 195, 239, 0.4); /* sombra más suave */
+
+  @media (max-width: 767px) { 
+    text-align: center;
+    margin-left: 0; 
   }
+}
+
   
   .content {
     display: flex;

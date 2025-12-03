@@ -1,15 +1,15 @@
 {
   "HERO": {
-    "BADGE": "🚀 Disponible para trabajar",
-    "WELCOME": "Transformando ideas en código",
-    "ROLE": "Desarrollador FullStack | Creando experiencias digitales",
-    "SUBTITLE": "Especializado en aplicaciones web y móviles",
+    "BADGE": "🚀 Desarrollador Full-Stack en crecimiento",
+    "WELCOME": "Impulsando soluciones digitales con tecnología",
+    "ROLE": "Full-Stack Developer | Especialista en C# y Angular",
+    "SUBTITLE": "Construyendo aplicaciones web modernas, rápidas y escalables",
     "DOWNLOAD_CV": "Descargar CV"
   },
   "about": {
-    "title": "Sobre Mi",
-    "introduction": "Soy <strong>{{ name }}</strong>, un apasionado desarrollador web especializado en soluciones innovadoras. Con experiencia en administración de sistemas, configuración de redes y mantenimiento de hardware, he trabajado con tecnologías como <strong>{{ skills }}</strong>.",
-    "interests": "Me impulsa el trabajar en equipo y resolver desafíos tecnológicos. Descubre más sobre mi trayectoria profesional en mi perfil de <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
+    "title": "Sobre Mí",
+    "introduction": "Soy <strong>{{ name }}</strong>, desarrollador Full-Stack con experiencia construyendo aplicaciones web completas utilizando Angular, .NET (C#) y SQL Server. He trabajado y liderado funcionalidades en proyectos reales como plataformas logísticas, sistemas de control de accesos y dashboards con datos en tiempo real, abarcando tanto frontend como backend.",
+    "interests": "Me motiva crear soluciones eficientes, escalables y orientadas a negocio. Disfruto trabajando en equipo, comunicándome con cliente y resolviendo retos técnicos en entornos ágiles. Puedes conocer más sobre mi trayectoria en mi <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
   },
   "contact": {
    "getInTouch": "Ponte en",

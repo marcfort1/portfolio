@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss — pega todo esto al principio del archivo */
+
+/* Reset y reglas globales */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* evita franjas por overflow horizontal */
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Fondo global (aplicar en html o body — aquí en body) */
+html {
+  color-scheme: light dark;
+}
+body {
+  background: linear-gradient(to bottom, #121212 0%, #2c003e 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #e0e0e0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Asegura que app-root ocupe todo el ancho y alto */
+app-root, #app-root {
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Contenedores internos: nunca uses 100vw si quieres evitar overflow */
+.full-width-element {
+  width: 100%;          /* usa 100% en vez de 100vw */
+  max-width: 100%;
+}
+
+/* Imágenes seguras */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
