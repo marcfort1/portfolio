@@ -1,10 +1,25 @@
 <section id="skills" class="skills-section">
   <div class="skills-container">
-    <h2 class="section-title">{{ 'skills.title' | translate }}</h2>
-    <div class="skills-grid">
-      <div class="skill-item" *ngFor="let skill of skills">
-        <img [src]="skill.image" [alt]="skill.name" class="skill-img">
-        <p class="skill-name">{{ 'skills.skills.' + skill.key | translate }}</p>
+    <h2 class="section-title">{{ "skills.title" | translate }}</h2>
+
+    <div *ngFor="let category of categories" class="category-block">
+      <h3 class="category-title">{{ category }}</h3>
+      <div class="skills-grid">
+        <div class="skill-card" *ngFor="let skill of skills" 
+     [hidden]="skill.category !== category"
+     #skillCard>
+  <div class="skill-header">
+    <img [src]="skill.image" [alt]="skill.name" class="skill-img" />
+    <h4 class="skill-title">{{ skill.name }}</h4>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" [style.width.%]="skill.animatedLevel || 0"></div>
+  </div>
+
+  <p class="skill-percent">{{ skill.animatedLevel || 0 }}%</p>
+</div>
+
       </div>
     </div>
   </div>
