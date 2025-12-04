@@ -56,36 +56,38 @@
       }
     }
   },
-  "experience": {
+   "experience": {
     "title": "Experiencia Laboral",
     "experiences": {
       "dxc_technology": {
         "company": "DXC Technology",
-        "role": "Becario Desarrollador Web",
-        "duration": "1000 horas de prácticas",
+        "role": "Junior Programmer",
+        "duration": "Ago 2023 — Ago 2024",
         "tasks": [
-          "Resolución de incidencias",
-          "Desarrollo de aplicaciones web",
-          "Diseño web",
-          "Diseño de bases de datos"
+          "Implementación y mantenimiento de frontend con Angular y backend en .NET/C#.",
+          "Diseño y optimización de consultas en SQL Server; modelado de datos.",
+          "Soporte y resolución de incidencias en preproducción/producción; documentación técnica.",
+          "Integraciones y colaboración con equipos, uso de Git/GitHub y metodologías ágiles."
         ]
       },
       "meibit": {
-        "company": "Meibit",
-        "role": "Becario Desarrollador Web",
-        "duration": "900 horas de prácticas",
+        "company": "Meibit Tech Solutions",
+        "role": "Programador Full-Stack",
+        "duration": "Dic 2024 — Actual",
         "tasks": [
-          "Resolución de incidencias",
-          "Desarrollo de aplicaciones web"
+          "Desarrollo de componentes y formularios con Angular (Reactive Forms) y maquetado responsive (HTML5 / SCSS).",
+          "Integración con APIs REST y manipulación de datos en bases de datos relacionales; diseño de esquemas y queries (SQL Server / MariaDB).",
+          "Tests unitarios y e2e en Angular; resolución de incidencias y despliegues (IIS / Docker).",
+          "Uso de Jira / Trello para seguimiento de tareas y comunicación con cliente."
         ]
       },
       "bon_preu": {
         "company": "BON PREU, SAU",
         "role": "Personal Reponedor",
-        "duration": "Junio - Agosto 2022, 2023, 2024",
+        "duration": "Jun - Ago 2022, 2023, 2024",
         "tasks": [
-          "Mantenimiento de la sección de frescos",
-          "Reposición de productos"
+          "Mantenimiento de la sección de frescos.",
+          "Reposición de productos y apoyo al equipo de tienda."
         ]
       }
     }

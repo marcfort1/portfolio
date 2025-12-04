@@ -10,7 +10,7 @@
   text-align: center;
 
   .experience-container {
-    max-width: 900px;
+    max-width: 1000px;
     padding: 50px 28px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
@@ -18,6 +18,7 @@
     animation: fadeIn 1s ease-in-out;
   }
 
+  /* TITULO: color sólido solicitado */
   .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -25,18 +26,18 @@
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(90deg, #B1C3EF, #00d4ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px #B1C3EF;
+
+    color: #B1C3EF; /* color sólido */
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+    text-shadow: 0 0 12px rgba(177,195,239,0.15); /* glow suave */
   }
 
   .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 
-    /* Línea central visible en escritorio */
     &::before {
       content: "";
       position: absolute;
@@ -44,7 +45,8 @@
       top: 0;
       width: 4px;
       height: 100%;
-      background: #B1C3EF;
+      background: #1b1b1b; /* línea tenue */
+      box-shadow: 0 0 8px rgba(177,195,239,0.06);
       transform: translateX(-50%);
     }
 
@@ -54,8 +56,9 @@
       width: 100%;
       display: flex;
       justify-content: flex-start;
+      align-items: flex-start;
 
-      /* Alterna la posición en escritorio */
+      /* alternancia en escritorio */
       &:nth-child(even) {
         justify-content: flex-end;
       }
@@ -63,161 +66,159 @@
       .timeline-dot {
         position: absolute;
         left: 50%;
-        top: 10px;
-        width: 20px;
-        height: 20px;
+        top: 12px;
+        width: 18px;
+        height: 18px;
         background: #B1C3EF;
         border-radius: 50%;
         transform: translateX(-50%);
-        border: 4px solid rgba(255, 255, 255, 0.8);
-        box-shadow: 0 0 8px rgba(177, 195, 239, 0.5);
+        border: 3px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0 10px rgba(177, 195, 239, 0.4);
+        z-index: 5;
       }
 
+      /* ---------- timeline content: inicial oculto + animación ---------- */
       .timeline-content {
         background: rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        border-radius: 8px;
+        padding: 22px;
+        border-radius: 10px;
         width: 45%;
         text-align: left;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        border-left: 5px solid #B1C3EF;
-        animation: fadeIn 1.5s ease-in-out;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        border-left: 4px solid #B1C3EF;
+        z-index: 2;
+
+        /* seguridad para texto largo */
+        word-break: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+
+        /* estado inicial (oculto y abajo) */
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+        will-change: opacity, transform;
 
         &.alt {
           border-left: none;
-          border-right: 5px solid #B1C3EF;
+          border-right: 4px solid #B1C3EF;
           text-align: right;
+        }
+
+        /* clase que añade TS cuando entra en viewport */
+        &.in-view {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* hover ligero para dar vida */
+        &:hover {
+          box-shadow: 0 10px 30px rgba(99,125,189,0.35);
         }
       }
     }
   }
 
-  h4 {
+  h4.exp-company {
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
   }
 
-  h5 {
+  h5.exp-role {
     color: #B1C3EF;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
   }
 
   .text-muted {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
-  ul {
-    padding-left: 20px;
+  ul.exp-tasks {
+    padding-left: 18px;
     text-align: left;
+    margin: 8px 0 0 0;
 
     li {
-      font-size: 1rem;
-      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.9);
       line-height: 1.6;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
   }
 }
 
-/* Animación de desvanecimiento, igual que en los otros componentes */
+/* Fade-in global (se usa también en otros componentes) */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Media queries para dispositivos pequeños */
+/* --- MOBILE ADAPTATIONS --- */
 @media (max-width: 768px) {
-  .experience-section {
-    padding: 80px 0;
-  }
+  .experience-section { padding: 60px 0; }
+
   .experience-container {
-    padding: 30px 15px;
+    padding: 24px 16px;
     max-width: 95%;
   }
-  .section-title {
-    font-size: 2.5rem;
-  }
+
+  .section-title { font-size: 2.2rem; }
 
   .timeline {
-    /* Oculta la línea temporal en móvil */
-    &::before {
-      display: none;
-    }
+    &::before { display: none; } /* ocultamos la línea central */
+
     .timeline-item {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 30px;
+      display: block;
+      margin-bottom: 20px;
+      text-align: left;
 
-      /* Se elimina la alternancia para centrar el contenido */
-      .timeline-content {
-        width: 90%;
-        border: none;
-        border-top: 5px solid #B1C3EF;
-        text-align: center;
-        padding: 15px;
-      }
-      /* Opcional: oculta el punto temporal en móvil */
       .timeline-dot {
-        display: none;
+        position: relative;
+        left: 0;
+        transform: none;
+        display: inline-block;
+        margin-bottom: 8px;
+        border: 3px solid rgba(255,255,255,0.06);
+      }
+
+      .timeline-content {
+        width: 100% !important;
+        margin: 0 auto;
+        border: none;
+        border-top: 4px solid #B1C3EF;
+        text-align: left !important;
+        padding: 14px;
+
+        /* en móvil mantenemos la animación pero reducimos la distancia */
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      /* si la clase in-view se añade desde TS, la animación también funciona en móvil */
+      .timeline-content.in-view {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }
 
-  h4 {
-    font-size: 1.3rem;
-  }
-  h5 {
-    font-size: 1.1rem;
-  }
-  .text-muted {
-    font-size: 0.9rem;
-  }
-  ul {
-    padding-left: 0;
-    li {
-      font-size: 0.9rem;
-    }
-  }
+  h4.exp-company { font-size: 1.15rem; }
+  h5.exp-role { font-size: 1rem; }
+  .text-muted { font-size: 0.9rem; }
+  ul.exp-tasks { padding-left: 12px; }
+  ul.exp-tasks li { font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-  .experience-section {
-    padding: 60px 0;
-  }
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  .experience-container {
-    padding: 20px 10px;
-  }
-  h4 {
-    font-size: 1.2rem;
-  }
-  h5 {
-    font-size: 1rem;
-  }
-  .text-muted {
-    font-size: 0.85rem;
-  }
-  ul {
-    li {
-      font-size: 0.85rem;
-    }
-  }
+  .section-title { font-size: 1.8rem; margin-bottom: 12px; }
+  .experience-container { padding: 16px 12px; }
+  .timeline .timeline-item .timeline-content { padding: 12px; }
 }

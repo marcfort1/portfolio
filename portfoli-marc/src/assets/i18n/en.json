@@ -61,31 +61,33 @@
     "experiences": {
       "dxc_technology": {
         "company": "DXC Technology",
-        "role": "Web Developer Intern",
-        "duration": "1000 hours of internship",
+        "role": "Junior Programmer",
+        "duration": "Aug 2023 — Aug 2024",
         "tasks": [
-          "Incident resolution",
-          "Web application development",
-          "Web design",
-          "Database design"
+          "Implementation and maintenance of Angular frontend and .NET/C# backend.",
+          "Design and optimization of SQL Server queries; data modeling.",
+          "Support and incident resolution in pre-production/production; technical documentation.",
+          "Integrations and collaboration with teams; Git/GitHub and agile workflows."
         ]
       },
       "meibit": {
-        "company": "Meibit",
-        "role": "Web Developer Intern",
-        "duration": "900 hours of internship",
+        "company": "Meibit Tech Solutions",
+        "role": "Full-Stack Developer",
+        "duration": "Dec 2024 — Present",
         "tasks": [
-          "Incident resolution",
-          "Web application development"
+          "Development of components and forms with Angular (Reactive Forms) and responsive layout (HTML5 / SCSS).",
+          "Integration with REST APIs and relational DBs; schema design and queries (SQL Server / MariaDB).",
+          "Unit and e2e tests in Angular; incident resolution and deployments (IIS / Docker).",
+          "Use of Jira / Trello for task tracking and client communication."
         ]
       },
       "bon_preu": {
         "company": "BON PREU, SAU",
-        "role": "Stocker",
-        "duration": "June - August 2022, 2023, 2024",
+        "role": "Shop Assistant",
+        "duration": "Jun - Aug 2022, 2023, 2024",
         "tasks": [
-          "Maintaining the fresh section",
-          "Product restocking"
+          "Maintenance of the fresh products section.",
+          "Product replenishment and support to the store team."
         ]
       }
     }

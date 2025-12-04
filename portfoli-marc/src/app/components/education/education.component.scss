@@ -25,10 +25,12 @@
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(90deg, #B1C3EF, #00d4ff);
+
+    background: linear-gradient(90deg, #9bb5ff, #c3d4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px #B1C3EF;
+
+    text-shadow: 0 0 15px rgba(155, 181, 255, 0.6);
   }
 
   .timeline {
@@ -53,12 +55,19 @@
       position: relative;
       margin-bottom: 30px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out;
-      animation: fadeIn 1.5s ease-in-out;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 
       &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 20px rgba(155, 181, 255, 0.5);
+      }
+
+      /* Animaciones alternadas */
+      &:nth-child(odd) {
+        animation: slideL 0.9s ease forwards;
+      }
+      &:nth-child(even) {
+        animation: slideR 0.9s ease forwards;
       }
 
       .timeline-content {
@@ -68,7 +77,7 @@
           font-weight: 600;
           margin: 0;
         }
-        
+
         span {
           display: block;
           font-size: 1.1rem;
@@ -81,71 +90,30 @@
   }
 }
 
-/* Animación de desvanecimiento (igual que en los otros componentes) */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Animaciones */
+@keyframes slideL {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
-/* Media queries para dispositivos pequeños */
+@keyframes slideR {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .education-section {
-    padding: 80px 0;
-  }
-  .education-container {
-    padding: 30px 15px;
-    max-width: 95%;
-  }
-  .section-title {
-    font-size: 2.5rem;
-  }
-  .timeline {
-    max-width: 100%;
-    &::before {
-      left: 50%;
-    }
-    .timeline-item {
-      padding: 15px;
-      margin-bottom: 20px;
-      .timeline-content {
-        h4 {
-          font-size: 1.4rem;
-        }
-        span {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
+  .education-section { padding: 80px 0; }
+  .education-container { padding: 30px 15px; max-width: 95%; }
+  .section-title { font-size: 2.5rem; }
 }
 
 @media (max-width: 480px) {
-  .education-section {
-    padding: 60px 0;
-  }
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  .education-container {
-    padding: 20px 10px;
-  }
-  .timeline-item {
-    padding: 10px;
-    margin-bottom: 15px;
-    .timeline-content {
-      h4 {
-        font-size: 1.2rem;
-      }
-      span {
-        font-size: 0.9rem;
-      }
-    }
-  }
+  .education-section { padding: 60px 0; }
+  .section-title { font-size: 2rem; }
 }

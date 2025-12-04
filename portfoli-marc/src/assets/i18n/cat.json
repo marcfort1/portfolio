@@ -61,22 +61,24 @@
     "experiences": {
       "dxc_technology": {
         "company": "DXC Technology",
-        "role": "Becari Desenvolupador Web",
-        "duration": "1000 hores de pràctiques",
+        "role": "Junior Programmer",
+        "duration": "Ago 2023 — Ago 2024",
         "tasks": [
-          "Resolució d'incidències",
-          "Desenvolupament d'aplicacions web",
-          "Disseny web",
-          "Disseny de bases de dades"
+          "Implementació i manteniment de frontend amb Angular i backend en .NET/C#.",
+          "Disseny i optimització de consultes a SQL Server; modelat de dades.",
+          "Suport i resolució d'incidències en preproducció i producció; documentació tècnica.",
+          "Integracions i col·laboració amb equips, ús de Git/GitHub i metodologies àgils."
         ]
       },
       "meibit": {
-        "company": "Meibit SL",
-        "role": "Becari Desenvolupador Web",
-        "duration": "900 hores de pràctiques",
+        "company": "Meibit Tech Solutions",
+        "role": "Programador Full-Stack",
+        "duration": "Dic 2024 — Actual",
         "tasks": [
-          "Resolució d'incidències",
-          "Desenvolupament d'aplicacions web"
+          "Desenvolupament de components i formularis amb Angular (Reactive Forms) i maquetat responsive (HTML5 / SCSS).",
+          "Integració amb APIs REST i manipulació de dades en bases de dades relacionals; disseny d'esquemes i queries (SQL Server / MariaDB).",
+          "Tests unitaris i e2e en Angular; resolució d'incidències i desplegaments (IIS / Docker).",
+          "Ús de Jira / Trello per al seguiment de tasques i comunicació amb el client."
         ]
       },
       "bon_preu": {
@@ -84,8 +86,8 @@
         "role": "Personal Reponedor",
         "duration": "Juny - Agost 2022, 2023, 2024",
         "tasks": [
-          "Manteniment de la secció de frescos",
-          "Reposició de productes"
+          "Manteniment de la secció de frescos.",
+          "Reposició de productes i atenció a l'equip de botiga."
         ]
       }
     }
