@@ -191,3 +191,16 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .skills-category h3,
+  .skills-section-title,
+  .section-title,
+  h2, h3 {
+    text-align: center !important;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
