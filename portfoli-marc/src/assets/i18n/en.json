@@ -94,7 +94,7 @@
   },
   "navbar": {
     "hero": "Home",
-    "about": "About Me",
+    "about": "About me",
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
@@ -103,19 +103,98 @@
   },
   "projects": {
     "title": "Projects",
-    "technologies": "Technologies",
-    "view_project": "View Project",
-    "gestor_llistes": {
-      "title": "Shopping List Manager",
-      "description": "Web app to manage shopping lists with Firebase."
-    },
-    "portfolio": {
-      "title": "Personal Portfolio",
-      "description": "My portfolio developed with Angular and Bootstrap."
-    },
-    "gestio_usuaris": {
-      "title": "User Management System",
-      "description": "App to manage users with Firebase authentication."
+    "view_more": "View more",
+    "view_less": "Close",
+    "open_link": "Open project",
+    "items": {
+      "wpf_db": {
+        "title": "WPF + Database",
+        "short": "WPF app with DB and server — CRUD actions over objects.",
+        "description": [
+          "Academic WPF project connected to a remote database.",
+          "Supported operations on objects (create, edit, delete) that updated the DB.",
+          "Deployed on a server with basic user control."
+        ],
+        "tech": ["WPF", "C#", "SQL", "Server"],
+        "type": "Academic"
+      },
+      "vue_php_shop": {
+        "title": "Online Shop (Vue + PHP)",
+        "short": "Vue frontend with PHP backend and MariaDB. Booking / purchase flow (demo).",
+        "description": [
+          "Vue.js app for a demo online shop.",
+          "Backend in PHP with MariaDB to manage products and reservations.",
+          "Purchase flows and simulated payment."
+        ],
+        "tech": ["Vue", "PHP", "MariaDB"],
+        "type": "Academic"
+      },
+      "android_forms_firebase": {
+        "title": "Android + Forms + Firebase",
+        "short": "Android app with Firebase, JSON parsing and realtime interaction.",
+        "description": [
+          "Android project with forms and Firebase as database.",
+          "Parsed JSON data from token-protected APIs.",
+          "Interactions stored in Firebase and synchronized."
+        ],
+        "tech": ["Android Studio", "Firebase", "JSON"],
+        "type": "Academic"
+      },
+      "logistics_erp": {
+        "title": "Logistics System (Angular + .NET)",
+        "short": "Custom ERP with sensors, real-time KPIs and bidirectional sync.",
+        "description": [
+          "Integral system for logistics companies with Angular frontend and .NET backend.",
+          "Real-time KPIs, dynamic charts, maps and timelines.",
+          "Bidirectional synchronization and multi-tenant management."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server"],
+        "type": "Professional"
+      },
+      "quercus_camera": {
+        "title": "Access control with camera (Quercus)",
+        "short": "Camera image management, lists, permissions and access validation.",
+        "description": [
+          "Ingest images from a Quercus camera to DB and show them on a web UI.",
+          "Statistics, profiles, permissions and sync with external systems like Biostar.",
+          "Barrier control, plate recognition logs and access history."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server", "Quercus"],
+        "type": "Professional"
+      },
+      "vehicle_registry": {
+        "title": "Daily vehicle registry",
+        "short": "Web showing per-lane images and allowing to add plates to blacklist.",
+        "description": [
+          "Daily registry with lane-by-lane images and easy browsing.",
+          "Blacklist feature to raise alarms when plates appear.",
+          "Filtering and report export."
+        ],
+        "tech": ["Angular", "SQL Server"],
+        "type": "Professional"
+      },
+      "image_card_service": {
+        "title": "Image <-> Card service",
+        "short": "Service mapping camera images and card reads to build a whitelist.",
+        "description": [
+          "Backend service that processes images and matches them with card readers.",
+          "Matches are promoted to whitelist entries.",
+          "Automated sync processes across devices."
+        ],
+        "tech": ["C#", "Worker Service", "SQL"],
+        "type": "Professional"
+      },
+      "sync_factorialapi": {
+        "title": "FactorialAPI → Camera sync",
+        "short": "Sync users and plates from APIs to SAFIRE cameras.",
+        "description": [
+          "Fetch users and plates from factorialapi and push them to camera APIs.",
+          "Compare with previous day to add/remove users or plates.",
+          "Validate and log changes."
+        ],
+        "tech": ["API", ".NET", "Automation"],
+        "type": "Professional"
+      }
     }
   }
 }

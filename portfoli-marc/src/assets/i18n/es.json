@@ -12,7 +12,7 @@
     "interests": "Me motiva crear soluciones eficientes, escalables y orientadas a negocio. Disfruto trabajando en equipo, comunicándome con cliente y resolviendo retos técnicos en entornos ágiles. Puedes conocer más sobre mi trayectoria en mi <a href='https://www.linkedin.com/in/marc-fort-gonz%C3%A1lez/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>."
   },
   "contact": {
-   "getInTouch": "Ponte en",
+    "getInTouch": "Ponte en",
     "spanTouch": "contacto",
     "phone": "Teléfono",
     "email": "Correo electrónico",
@@ -56,7 +56,7 @@
       }
     }
   },
-   "experience": {
+  "experience": {
     "title": "Experiencia Laboral",
     "experiences": {
       "dxc_technology": {
@@ -103,19 +103,98 @@
   },
   "projects": {
     "title": "Proyectos",
-    "technologies": "Tecnologías",
-    "view_project": "Ver Proyecto",
-    "gestor_llistes": {
-      "title": "Gestor de Listas de la Compra",
-      "description": "Aplicación web para gestionar listas de la compra con Firebase."
-    },
-    "portfolio": {
-      "title": "Portfolio Personal",
-      "description": "Mi portfolio desarrollado con Angular y Bootstrap."
-    },
-    "gestio_usuaris": {
-      "title": "Sistema de Gestión de Usuarios",
-      "description": "Aplicación para gestionar usuarios con autenticación en Firebase."
+    "view_more": "Ver más",
+    "view_less": "Cerrar",
+    "open_link": "Abrir proyecto",
+    "items": {
+      "wpf_db": {
+        "title": "WPF + Base de datos",
+        "short": "Aplicación WPF con BD y servidor — acciones CRUD sobre objetos.",
+        "description": [
+          "Proyecto académico en WPF conectado a una base de datos remota.",
+          "Permitía operaciones sobre objetos (crear, editar, eliminar) que modificaban la BD.",
+          "Desplegado en servidor y con control de usuarios básico."
+        ],
+        "tech": ["WPF", "C#", "SQL", "Server"],
+        "type": "Académico"
+      },
+      "vue_php_shop": {
+        "title": "Tienda Online (Vue + PHP)",
+        "short": "Frontend Vue con backend PHP y MariaDB. Sistema de reservas / compras ficticio.",
+        "description": [
+          "App con Vue.js para una tienda online ficticia.",
+          "Backend en PHP con MariaDB para gestión de productos y reservas.",
+          "Flujos de compra y simulación de pago."
+        ],
+        "tech": ["Vue", "PHP", "MariaDB"],
+        "type": "Académico"
+      },
+      "android_forms_firebase": {
+        "title": "Android + Forms + Firebase",
+        "short": "App Android con Firebase, parseo JSON e interacción en tiempo real.",
+        "description": [
+          "Proyecto Android integrado con formularios y Firebase como BD.",
+          "Parseo de datos JSON recibidos de APIs con tokens.",
+          "Interacciones guardadas en Firebase y sincronización."
+        ],
+        "tech": ["Android Studio", "Firebase", "JSON"],
+        "type": "Académico"
+      },
+      "logistics_erp": {
+        "title": "Sistema para logística (Angular + .NET)",
+        "short": "ERP a medida con sensores, KPIs en tiempo real y sincronización bidireccional.",
+        "description": [
+          "Sistema integral para empresas de logística con Angular frontend y .NET backend.",
+          "KPIs en tiempo real, gráficos dinámicos, mapas y timelines.",
+          "Sincronización bidireccional y gestión de usuarios/empresas."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server"],
+        "type": "Profesional"
+      },
+      "quercus_camera": {
+        "title": "Control de acceso con cámara (Quercus)",
+        "short": "Visualización y gestión de imágenes de cámara, listas, permisos y validación de acceso.",
+        "description": [
+          "Recepción de imágenes desde una cámara Quercus a la BD y visualización web.",
+          "Estadísticas, perfiles, permisos y sincronización con sistemas externos como Biostar.",
+          "Control de acceso a barreras, registro de matrículas e historial."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server", "Quercus"],
+        "type": "Profesional"
+      },
+      "vehicle_registry": {
+        "title": "Registro diario de vehículos",
+        "short": "Web que muestra todas las imágenes por vial y permite marcar listas negras.",
+        "description": [
+          "Registro diario con imágenes de cada vial y visualización sencilla.",
+          "Función de 'blacklist' para matrículas con alarmas cuando aparecen.",
+          "Filtrado y exportación de informes."
+        ],
+        "tech": ["Angular", "SQL Server"],
+        "type": "Profesional"
+      },
+      "image_card_service": {
+        "title": "Servicio de imagen y tarjeta",
+        "short": "Servicio que relaciona imágenes de cámara con tarjetas para crear whitelist.",
+        "description": [
+          "Servicio backend que procesa imágenes y relaciona con lectores de tarjetas.",
+          "Cuando se detecta una correspondencia se marca como whitelist.",
+          "Procesos automáticos para sincronizar registros entre dispositivos."
+        ],
+        "tech": ["C#", "Worker Service", "SQL"],
+        "type": "Profesional"
+      },
+      "sync_factorialapi": {
+        "title": "Sincronizador factorialapi → cámaras",
+        "short": "Sync de usuarios y matrículas entre APIs y cámaras SAFIRE.",
+        "description": [
+          "Obtención de usuarios y matrículas desde factorialapi y envío a APIs de cámaras.",
+          "Comparativa con el día anterior para añadir/quitar usuarios o matrículas.",
+          "Validación y logging de los cambios."
+        ],
+        "tech": ["API", ".NET", "Automation"],
+        "type": "Profesional"
+      }
     }
   }
 }

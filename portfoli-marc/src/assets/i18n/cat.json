@@ -1,5 +1,5 @@
 {
-"HERO": {
+  "HERO": {
     "BADGE": "🚀 Desenvolupador Full-Stack en creixement",
     "WELCOME": "Impulsant solucions digitals amb tecnologia",
     "ROLE": "Full-Stack Developer | Especialista en C# i Angular",
@@ -17,7 +17,7 @@
     "phone": "Telèfon",
     "email": "Correu electrònic",
     "locationTitle": "Ubicació"
-},
+  },
   "skills": {
     "title": "Competències",
     "skills": {
@@ -103,19 +103,98 @@
   },
   "projects": {
     "title": "Projectes",
-    "technologies": "Tecnologies",
-    "view_project": "Veure Projecte",
-    "gestor_llistes": {
-      "title": "Gestor de Llistes de la Compra",
-      "description": "Aplicació web per gestionar llistes de la compra amb Firebase."
-    },
-    "portfolio": {
-      "title": "Portfolio Personal",
-      "description": "El meu portfoli desenvolupat amb Angular i Bootstrap."
-    },
-    "gestio_usuaris": {
-      "title": "Sistema de Gestió d'Usuaris",
-      "description": "Aplicació per gestionar usuaris amb autenticació en Firebase."
+    "view_more": "Veure més",
+    "view_less": "Tancar",
+    "open_link": "Obrir projecte",
+    "items": {
+      "wpf_db": {
+        "title": "WPF + Base de dades",
+        "short": "Aplicació WPF amb BD i servidor — accions CRUD sobre objectes.",
+        "description": [
+          "Projecte acadèmic en WPF connectat a una base de dades remota.",
+          "Permetia operacions sobre objectes (crear, editar, eliminar) que modificaven la BD.",
+          "Desplegat en servidor i amb control d'usuaris bàsic."
+        ],
+        "tech": ["WPF", "C#", "SQL", "Server"],
+        "type": "Acadèmic"
+      },
+      "vue_php_shop": {
+        "title": "Tenda Online (Vue + PHP)",
+        "short": "Frontend Vue amb backend PHP i MariaDB. Sistema de reserves / compres fictici.",
+        "description": [
+          "App amb Vue.js per a una botiga online fictícia.",
+          "Backend en PHP amb MariaDB per a gestió de productes i reserves.",
+          "Fluxs de compra i simulació de pagament."
+        ],
+        "tech": ["Vue", "PHP", "MariaDB"],
+        "type": "Acadèmic"
+      },
+      "android_forms_firebase": {
+        "title": "Android + Forms + Firebase",
+        "short": "App Android amb Firebase, parseig JSON i interacció en temps real.",
+        "description": [
+          "Projecte Android integrat amb formularis i Firebase com a BD.",
+          "Parseig de dades JSON rebudes d'APIs amb tokens.",
+          "Interaccions guardades a Firebase i sincronització."
+        ],
+        "tech": ["Android Studio", "Firebase", "JSON"],
+        "type": "Acadèmic"
+      },
+      "logistics_erp": {
+        "title": "Sistema per a logística (Angular + .NET)",
+        "short": "ERP a mida amb sensors, KPIs en temps real i sincronització bidireccional.",
+        "description": [
+          "Sistema integral per empreses de logística amb Angular frontend i .NET backend.",
+          "KPIs en temps real, gràfics dinàmics, mapes i timelines.",
+          "Sincronització bidireccional i gestió d'usuaris/empreses."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server"],
+        "type": "Professional"
+      },
+      "quercus_camera": {
+        "title": "Control d'accés amb càmera (Quercus)",
+        "short": "Visualització i gestió d'imatges de càmera, llistes, permisos i validació d'accés.",
+        "description": [
+          "Recepció d'imatges des d'una càmera Quercus a la BD i visualització web.",
+          "Estadístiques, perfils, permisos, i sincronització amb sistemes externs com Biostar.",
+          "Control d'accés a barreres, registre de matrícules i historial."
+        ],
+        "tech": ["Angular", ".NET", "SQL Server", "Quercus"],
+        "type": "Professional"
+      },
+      "vehicle_registry": {
+        "title": "Registre diari de vehicles",
+        "short": "Web que mostra totes les imatges per vial i permet marcar llistes negres.",
+        "description": [
+          "Registre diari amb imatges de cada vial i visualització fàcil.",
+          "Funció de 'blacklist' per matrícules amb alarmes quan apareixen.",
+          "Filtrat i exportació d'informes."
+        ],
+        "tech": ["Angular", "SQL Server"],
+        "type": "Professional"
+      },
+      "image_card_service": {
+        "title": "Servei d'imatge i targeta",
+        "short": "Servei que relaciona imatges de càmera amb targetes per crear whitelist.",
+        "description": [
+          "Servei backend que processa imatges i relaciona amb lectors de targetes.",
+          "Quan es detecta una correspondència es marca com a whitelist.",
+          "Processos automàtics per sincronitzar registres entre dispositius."
+        ],
+        "tech": ["C#", "Worker Service", "SQL"],
+        "type": "Professional"
+      },
+      "sync_factorialapi": {
+        "title": "Sincronitzador factorialapi → càmeres",
+        "short": "Sync d'usuaris i matrícules entre APIs i càmeres SAFIRE.",
+        "description": [
+          "Obtenció d'usuaris i matrícules des de factorialapi i enviament a APIs de càmeres.",
+          "Comparativa amb el dia anterior per afegir/treure usuaris o matrícules.",
+          "Validació i logging dels canvis."
+        ],
+        "tech": ["API", ".NET", "Automation"],
+        "type": "Professional"
+      }
     }
   }
 }

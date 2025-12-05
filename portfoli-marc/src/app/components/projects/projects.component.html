@@ -1,0 +1,48 @@
+<section id="projects" class="projects-section">
+  <div class="projects-container">
+    <h2 class="section-title">{{ 'projects.title' | translate }}</h2>
+
+    <div class="projects-grid">
+      <article class="project-card" *ngFor="let p of projects">
+        <div class="card-media" *ngIf="p.image">
+          <img [src]="p.image" [alt]="p.title" />
+        </div>
+
+        <div class="card-body">
+          <!-- Tipo de proyecto (opcional) -->
+          <div class="project-type" *ngIf="p.type">{{ p.type }}</div>
+
+          <h3 class="project-title">{{ p.title }}</h3>
+          <p class="project-short">{{ p.short }}</p>
+
+          <!-- DETAILS: usamos data-label-closed / data-label-open para texto traducido -->
+          <details class="project-details"
+                   [attr.data-label-closed]="'projects.view_more' | translate"
+                   [attr.data-label-open]="'projects.view_less' | translate">
+            <!-- summary vacío: el texto se muestra via CSS ::after. Mantener accesibilidad con aria-controls/aria-expanded si lo deseas. -->
+            <summary aria-hidden="false"></summary>
+
+            <div class="details-wrapper">
+              <div class="project-desc">
+                <p *ngFor="let line of p.description">{{ line }}</p>
+              </div>
+
+              <div class="project-meta">
+                <div class="project-tech">
+                  <span *ngFor="let t of p.tech" class="tech-chip">{{ t }}</span>
+                </div>
+                <!-- <div class="project-date" *ngIf="p.type">{{ p.type }}</div> -->
+              </div>
+
+              <div class="project-actions" *ngIf="p.link">
+                <a [href]="p.link" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  {{ 'projects.open_link' | translate }}
+                </a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

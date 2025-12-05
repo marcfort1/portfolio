@@ -17,9 +17,11 @@ export class NavbarComponent {
   navLinks: NavLink[] = [
     { title: "navbar.hero", path: "#hero" },
     { title: "navbar.about", path: "#about" },
+    { title: "navbar.education", path: "#education" },
     { title: "navbar.skills", path: "#skills" },
     { title: "navbar.experience", path: "#experience" },
-    { title: "navbar.education", path: "#education" },
+    { title: "navbar.projects", path: "#projects" },
+
     { title: "navbar.contact", path: "#contact" },
   ];
 

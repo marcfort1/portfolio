@@ -1,0 +1,204 @@
+/* Sección general */
+.projects-section {
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,1)),
+              url('../../../assets/bg.jpg') no-repeat center center/cover;
+  padding: 100px 0;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor */
+.projects-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px;
+  background: rgba(0,0,0,0.65);
+  border-radius: 20px;
+  box-shadow: 0 0 70px rgba(99,125,189,0.55);
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+/* Título */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #9bb5ff, #c3d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(155,181,255,0.28);
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* TARJETA */
+.project-card {
+  background: rgba(0,0,0,0.88);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(160,180,255,0.12);
+
+  /* Sombra más clara y definida */
+  box-shadow: 0 14px 60px rgba(0,0,0,0.62), inset 0 0 40px rgba(155,181,255,0.02);
+
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 26px 80px rgba(99,125,189,0.32);
+  }
+}
+
+/* Imagen */
+.card-media img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Cuerpo */
+.card-body {
+  padding: 18px 20px;
+}
+
+/* Tipo (ACADEMICO / PROFESIONAL) - estilo sutil */
+.project-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: rgba(200,210,255,0.9);
+  background: rgba(177,195,239,0.04);
+  border: 1px solid rgba(177,195,239,0.06);
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  box-shadow: none; /* removemos sombra para no abrumar */
+}
+
+/* Título y subtítulo */
+.project-title {
+  font-size: 1.18rem;
+  margin: 6px 0 4px 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.project-short {
+  color: #cfcfcf;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+
+/* Separador y detalles */
+.project-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid rgba(155,181,255,0.20); /* línea más visible */
+}
+
+/* summary vacío: texto mostrado por ::after */
+.project-details summary {
+  list-style: none;
+  cursor: pointer;
+  color: #bcd0ff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-radius: 6px;
+}
+
+/* Indicador visual (flecha) */
+.project-details summary::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #bcd0ff;
+  border-bottom: 2px solid #bcd0ff;
+  transform: rotate(45deg);
+  transition: transform .22s ease, opacity .18s ease;
+  margin-left: -2px;
+}
+
+/* Texto (usamos attr data-label-closed/open en <details>) */
+.project-details summary::after {
+  content: attr(data-label-closed);
+  color: #B1C3EF;
+  font-size: 0.98rem;
+  margin-left: 6px;
+}
+
+/* Si está abierto, cambia flecha y texto */
+.project-details[open] summary::before {
+  transform: rotate(-135deg);
+}
+.project-details[open] summary::after {
+  content: attr(data-label-open);
+}
+
+/* Animación del contenido (suavizado) */
+.details-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.36s ease, opacity 0.36s ease;
+  opacity: 0;
+  padding-top: 0;
+}
+
+.project-details[open] .details-wrapper {
+  max-height: 900px; /* suficiente para contenido */
+  opacity: 1;
+  padding-top: 10px;
+}
+
+/* Descripción y chips */
+.project-desc p {
+  margin: 6px 0;
+  color: rgba(230,230,230,0.95);
+  line-height: 1.45;
+}
+
+.tech-chip {
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: rgba(155,181,255,0.06);
+  color: #bcd0ff;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  border: 1px solid rgba(155,181,255,0.08);
+}
+
+/* Botón */
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b1c3ef, #00d4ff);
+  color: #081126;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; }
+  .card-body { text-align: center; }
+  .project-type { margin-left: 0; }
+  .project-details summary::after { display: inline-block; }
+}
